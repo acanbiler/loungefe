@@ -1,6 +1,8 @@
 import React from "react";
 import {Button, Container, Header, Segment} from 'semantic-ui-react'
 
+import history from "../utils/history";
+
 class Lounge extends React.Component{
     state = {}
 
@@ -37,15 +39,12 @@ class Lounge extends React.Component{
                     marginTop: '1.5em',
                 }}
             />
-            <Button.Group>
-                <Button primary size='huge'>
-                    Upgrade Ticket
-                </Button>
-                <Button.Or />
-                <Button size='huge' color='orange'>
-                    Visit Shops
-                </Button>
-            </Button.Group>
+            <Button primary size='huge' onClick={() => history.push("/ticket")}>
+                Upgrade Ticket
+            </Button>
+            <Button size='huge' color='orange' onClick={() => history.push("/shops")}>
+                Visit Shops
+            </Button>
         </Container>
     )
 
@@ -56,7 +55,7 @@ class Lounge extends React.Component{
             <Segment
                 inverted
                 textAlign='center'
-                style={{ minHeight: 700, padding: '1em 0em' }}
+                style={{ minHeight: 900, padding: '1em 0em' }}
                 vertical
             >
                 <HomepageHeading />

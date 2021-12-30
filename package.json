@@ -2,6 +2,7 @@
   "name": "loungefe",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -13,7 +14,11 @@
     "semantic-ui-react": "^2.0.4",
     "web-vitals": "^2.1.2",
     "history": "^4.7.2",
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "react-router-dom": "^4.3.1",
+    "lodash": "^4.17.21",
+    "immer": "^9.0.7",
+    "react-toastify": "^8.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
